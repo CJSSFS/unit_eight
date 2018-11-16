@@ -4,8 +4,22 @@ import random
 root = tkinter.Tk()
 root.title("Wheel Of Fortune")
 
+
+def get_word():
+    """
+    This function gets a random word from a list of words and displays it in blanks when the program is run
+    :return:
+    """
+    my_file = open("wordfile.txt", "r")
+    word = my_file.readlines()
+    my_file.close()
+    my_word = random.choice(word)
+    my_word = my_word[:-1]
+    return my_word
+
+
 answer = []
-word = "basketball"
+word = get_word()
 for x in range(len(word)):
     answer.append("_")
 
