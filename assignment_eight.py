@@ -4,7 +4,7 @@ import random
 root = tkinter.Tk()
 root.title("Wheel Of Fortune")
 
-answer =[]
+answer = []
 word = "basketball"
 for x in range(len(word)):
     answer.append("_")
@@ -32,6 +32,7 @@ def check_b():
             if "b" == word[x]:
                 answer[x] = "b"
     showword.set(answer)
+
 
 def check_c():
     print(answer)
@@ -67,6 +68,7 @@ def check_f():
             if "f" == word[x]:
                 answer[x] = "f"
     showword.set(answer)
+
 
 def check_g():
     print(answer)
@@ -275,7 +277,7 @@ F.grid(row=4, column=6)
 G = tkinter.Button(root, text="G", command=check_g)
 G.grid(row=5, column=1)
 
-H = tkinter.Button(root, text="H", comand=check_h)
+H = tkinter.Button(root, text="H", command=check_h)
 H.grid(row=5, column=2)
 
 I = tkinter.Button(root, text="I", command=check_i)
@@ -284,52 +286,52 @@ I.grid(row=5, column=3)
 J = tkinter.Button(root, text="J", command=check_j)
 J.grid(row=5, column=4)
 
-K = tkinter.Button(root, text="K")
+K = tkinter.Button(root, text="K", command=check_k)
 K.grid(row=5, column=5)
 
-L = tkinter.Button(root, text="L")
+L = tkinter.Button(root, text="L", command=check_l)
 L.grid(row=5, column=6)
 
-M = tkinter.Button(root, text="M")
+M = tkinter.Button(root, text="M", command=check_m)
 M.grid(row=6, column=1)
 
-N = tkinter.Button(root, text="N")
+N = tkinter.Button(root, text="N", command=check_n)
 N.grid(row=6, column=2)
 
-O = tkinter.Button(root, text="O")
+O = tkinter.Button(root, text="O", command=check_o)
 O.grid(row=6, column=3)
 
-P = tkinter.Button(root, text="P")
+P = tkinter.Button(root, text="P", command=check_p)
 P.grid(row=6, column=4)
 
-Q = tkinter.Button(root, text="Q")
+Q = tkinter.Button(root, text="Q", command=check_q)
 Q.grid(row=6, column=5)
 
-R = tkinter.Button(root, text="R")
+R = tkinter.Button(root, text="R", command=check_r)
 R.grid(row=6, column=6)
 
-S = tkinter.Button(root, text="S")
+S = tkinter.Button(root, text="S", command=check_s)
 S.grid(row=7, column=1)
 
-T = tkinter.Button(root, text="T")
+T = tkinter.Button(root, text="T", command=check_t)
 T.grid(row=7, column=2)
 
-U = tkinter.Button(root, text="U")
+U = tkinter.Button(root, text="U", command=check_u)
 U.grid(row=7, column=3)
 
-V = tkinter.Button(root, text="V")
+V = tkinter.Button(root, text="V", command=check_v)
 V.grid(row=7, column=4)
 
-W = tkinter.Button(root, text="W")
+W = tkinter.Button(root, text="W", command=check_w)
 W.grid(row=7, column=5)
 
-X = tkinter.Button(root, text="X")
+X = tkinter.Button(root, text="X", command=check_x)
 X.grid(row=7, column=6)
 
-Y = tkinter.Button(root, text="Y")
+Y = tkinter.Button(root, text="Y", command=check_y)
 Y.grid(row=8, column=1)
 
-Z = tkinter.Button(root, text="Z")
+Z = tkinter.Button(root, text="Z", command=check_z)
 Z.grid(row=8, column=2)
 
 
